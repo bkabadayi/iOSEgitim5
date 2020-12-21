@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZooApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Daily Consume: 61 L" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74k-Nh-82I">
+                                <rect key="frame" x="20" y="187" width="172" height="62"/>
+                                <color key="backgroundColor" red="0.80617976189999996" green="0.74605554340000002" blue="0.28895688060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="13"/>
+                                <color key="textColor" red="0.30951732399999998" green="0.62158715720000002" blue="0.91648894550000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Water Limit: 1000 L" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zg-Ak-aA3">
+                                <rect key="frame" x="224" y="187" width="169" height="62"/>
+                                <color key="backgroundColor" red="0.80617976189999996" green="0.74605554340000002" blue="0.28895688060000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="4lU-dL-UC3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="13"/>
+                                <color key="textColor" red="0.30951732399999998" green="0.62158715720000002" blue="0.91648894550000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="We have 4 animals in our zoo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="584-Iz-y2u">
+                                <rect key="frame" x="20" y="304" width="374" height="62"/>
+                                <color key="backgroundColor" red="1" green="0.80226559716449874" blue="0.30868501493157785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="EOE-SF-9oS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="22"/>
+                                <color key="textColor" red="0.31663366766696616" green="0.62721967799482614" blue="0.91485516651684817" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D13-se-gCd">
+                                <rect key="frame" x="130" y="701" width="154" height="144"/>
+                                <color key="backgroundColor" red="0.18531566860000001" green="0.51492035390000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="22"/>
+                                <state key="normal" title="Add Animal">
+                                    <color key="titleColor" red="0.89952963590000001" green="0.88956099749999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addAnimalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AUq-X7-MVA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to MyZoo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcv-2j-MsZ">
+                                <rect key="frame" x="20" y="64" width="374" height="82"/>
+                                <color key="backgroundColor" red="0.91485516651684817" green="0.3441814724669468" blue="0.35705096635670497" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="28"/>
+                                <color key="textColor" red="0.91485516651684817" green="0.8710956656080816" blue="0.29787238233404228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="Ijg-RF-E2M">
+                                <rect key="frame" x="20" y="401" width="379" height="266"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter a name of animal" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="roY-zr-epM">
+                                        <rect key="frame" x="0.0" y="0.0" width="379" height="44"/>
+                                        <color key="backgroundColor" red="0.8022193313" green="0.74187701939999995" blue="0.32640674710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="6ew-3K-H4s"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter the sound of the animal" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X0G-1t-HeJ">
+                                        <rect key="frame" x="0.0" y="111" width="379" height="44"/>
+                                        <color key="backgroundColor" red="0.8022193313" green="0.74187701939999995" blue="0.32640674710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Wo8-Et-adk"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter water consume of the animal" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xKV-Pj-baZ">
+                                        <rect key="frame" x="0.0" y="222" width="379" height="44"/>
+                                        <color key="backgroundColor" red="0.8022193313" green="0.74187701939999995" blue="0.32640674710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Eal-5J-8pI"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="X0G-1t-HeJ" firstAttribute="top" secondItem="roY-zr-epM" secondAttribute="bottom" constant="67" id="G1T-kB-igN"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.92730212209999996" blue="0.40856963400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D13-se-gCd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="0qH-nU-5MZ"/>
+                            <constraint firstItem="1zg-Ak-aA3" firstAttribute="leading" secondItem="74k-Nh-82I" secondAttribute="trailing" constant="32" id="2XT-SM-Lli"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="D13-se-gCd" secondAttribute="bottom" constant="13" id="4vG-lc-Kbg"/>
+                            <constraint firstItem="584-Iz-y2u" firstAttribute="top" secondItem="74k-Nh-82I" secondAttribute="bottom" constant="55" id="5HE-Ae-b4m"/>
+                            <constraint firstItem="584-Iz-y2u" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="304" id="86p-tG-qoR"/>
+                            <constraint firstItem="Ijg-RF-E2M" firstAttribute="width" secondItem="584-Iz-y2u" secondAttribute="width" id="9FC-eR-5ap"/>
+                            <constraint firstItem="584-Iz-y2u" firstAttribute="leading" secondItem="74k-Nh-82I" secondAttribute="leading" id="9qn-J8-2Pj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1zg-Ak-aA3" secondAttribute="trailing" constant="20" id="AA5-sd-5ui"/>
+                            <constraint firstItem="1zg-Ak-aA3" firstAttribute="top" secondItem="Zcv-2j-MsZ" secondAttribute="bottom" constant="41" id="Fhj-8U-fw5"/>
+                            <constraint firstItem="Zcv-2j-MsZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Imv-bV-Jgd"/>
+                            <constraint firstItem="584-Iz-y2u" firstAttribute="top" secondItem="1zg-Ak-aA3" secondAttribute="bottom" constant="55" id="Kjf-qD-oM3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zcv-2j-MsZ" secondAttribute="trailing" constant="20" id="N7p-jV-DMP"/>
+                            <constraint firstItem="74k-Nh-82I" firstAttribute="width" secondItem="1zg-Ak-aA3" secondAttribute="width" id="OSB-Ra-5PT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D13-se-gCd" secondAttribute="trailing" constant="130" id="PMI-yi-XTV"/>
+                            <constraint firstItem="D13-se-gCd" firstAttribute="top" secondItem="Ijg-RF-E2M" secondAttribute="bottom" constant="34" id="Vb6-Za-cfv"/>
+                            <constraint firstItem="74k-Nh-82I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XUK-gD-pnD"/>
+                            <constraint firstItem="Ijg-RF-E2M" firstAttribute="top" secondItem="584-Iz-y2u" secondAttribute="bottom" constant="35" id="ZyA-tE-j0P"/>
+                            <constraint firstItem="74k-Nh-82I" firstAttribute="top" secondItem="Zcv-2j-MsZ" secondAttribute="bottom" constant="41" id="jnN-d2-eyo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ijg-RF-E2M" secondAttribute="trailing" constant="15" id="m7R-rE-3u4"/>
+                            <constraint firstItem="Ijg-RF-E2M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qhn-Q4-fzt"/>
+                            <constraint firstItem="Zcv-2j-MsZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xxH-Dl-cC0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animalNameLabel" destination="roY-zr-epM" id="Aka-Va-O1E"/>
+                        <outlet property="animalSoundLabel" destination="X0G-1t-HeJ" id="ddL-Fm-d0N"/>
+                        <outlet property="animalWaterLabel" destination="xKV-Pj-baZ" id="OPq-J9-S3V"/>
+                        <outlet property="button" destination="D13-se-gCd" id="HQb-Ut-qRd"/>
+                        <outlet property="dailyWaterLabel" destination="74k-Nh-82I" id="iqX-8K-sEC"/>
+                        <outlet property="insLabel" destination="584-Iz-y2u" id="3mt-qy-kHz"/>
+                        <outlet property="waterLimitLabel" destination="1zg-Ak-aA3" id="6dH-Xf-CTy"/>
+                        <outlet property="zooLabel" destination="Zcv-2j-MsZ" id="EY5-y0-h0u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+</document>
