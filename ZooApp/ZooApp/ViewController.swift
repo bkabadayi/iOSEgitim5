@@ -52,9 +52,7 @@ class ViewController: UIViewController {
     
     @IBAction func addAnimalButton(_ sender: Any) {
         if animalNameLabel.text != "" && animalSoundLabel.text != "" && animalWaterLabel.text != "" {
-            let a : Int = Int (animalWaterLabel.text ?? "") ?? 0
-            //if myZoo.getDailyConsumeWaterLimit() != myZoo.getTotalConsumeWater() + Int (animalWaterLabel.text ?? "") ?? 0      Niye olmuyor?
-            if myZoo.getDailyConsumeWaterLimit() >= myZoo.getTotalConsumeWater() + a {
+            if myZoo.getDailyConsumeWaterLimit() != myZoo.getTotalConsumeWater() + (Int (animalWaterLabel.text ?? "") ?? 0) {
                 let newAnimal = Animals ()
                 newAnimal.animalName = animalNameLabel.text ?? ""
                 newAnimal.animalSound = animalSoundLabel.text ?? ""

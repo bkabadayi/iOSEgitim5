@@ -34,6 +34,7 @@ class Zoo {
         fox.animalName = "Fox"
         fox.animalSound = "?"
         fox.animalConsumeWater = 18
+        
         animalList.append(dog)
         animalList.append(cat)
         animalList.append(sheep)
