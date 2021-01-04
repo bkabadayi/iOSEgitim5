@@ -13,12 +13,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var dailyWaterLabel: UILabel!
     @IBOutlet weak var waterLimitLabel: UILabel!
     @IBOutlet weak var insLabel: UILabel!
+    
     @IBOutlet weak var animalNameLabel: UITextField!
     @IBOutlet weak var animalSoundLabel: UITextField!
     @IBOutlet weak var animalWaterLabel: UITextField!
+    
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var addAnimalButton: UIButton!
     
     var myZoo = Zoo()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,6 +52,9 @@ class ViewController: UIViewController {
         
         button.layer.cornerRadius = 15
         button.layer.masksToBounds = true
+        
+        addAnimalButton.layer.cornerRadius = 15
+        addAnimalButton.layer.masksToBounds = true
     }
     
     @IBAction func addAnimalButton(_ sender: Any) {
@@ -62,13 +69,6 @@ class ViewController: UIViewController {
                 let alertAddedAnimal = UIAlertController(title: "Congratulations!", message: "You added a new animal to zoo!", preferredStyle: .alert)
                 alertAddedAnimal.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                 self.present(alertAddedAnimal, animated: true)
-//                var Animalmessage : [String] = [""]
-//                for item in myZoo.getAnimalList() {
-//                    Animalmessage.append("\(item.animalName)   \(item.animalSound)   \(item.animalConsumeWater)")
-//                }
-//                for item in 1...myZoo.getAnimalListCount() {
-//                        insLabel.text = Animalmessage[item-1]
-//                    }
                 insLabel.text = "We have \(myZoo.getAnimalListCount()) animals in our zoo"
                 dailyWaterLabel.text = "Daily Consume: \(myZoo.getTotalConsumeWater()) L"
             }
@@ -83,5 +83,12 @@ class ViewController: UIViewController {
             alertFillAllAreas.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alertFillAllAreas, animated: true)
         }
+    }
+    
+    @IBAction func animalListButtonTouched(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let animalListVC = storyboard.instantiateViewController(identifier: "AnimalListVC") as! AnimalListVC
+        animalListVC.animalList = myZoo.getAnimalList()
+        self.navigationController?.pushViewController(animalListVC, animated: true)
     }
 }
